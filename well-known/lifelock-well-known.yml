@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of the LifeLock / Gen Digital web hosts
+note: >-
+  LifeLock is a consumer identity-theft-protection brand and publishes no
+  developer API surface. No /.well-known/ discovery document was served on any
+  probed host. Recorded as honest negative data; no WellKnown pointer is wired
+  into apis.yml because nothing was found.
+hosts:
+- host: https://lifelock.norton.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://us.norton.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://www.gendigital.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+other_probes:
+- url: https://developer.lifelock.com/
+  status: 000
+  note: host does not resolve
+- url: https://api.lifelock.com/
+  status: 000
+  note: host does not resolve
+- url: https://developer.gendigital.com/
+  status: 000
+  note: host does not resolve
+- url: https://lifelock.norton.com/llms.txt
+  status: 200
+  note: served; saved verbatim to llms/lifelock-llms.txt

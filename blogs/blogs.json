@@ -1,0 +1,14 @@
+{
+  "repo": "lifelock",
+  "feeds": [
+    {
+      "source": "https://www.gendigital.com/us/en/contact-us/report-a-potential-security-vulnerability/",
+      "feed_url": "https://www.gendigital.com/us/en/contact-us/report-a-potential-security-vulnerability/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-25T15:00:33Z"
+}
