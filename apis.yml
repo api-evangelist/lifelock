@@ -1,23 +1,52 @@
 aid: lifelock
 name: LifeLock
-description: 'LifeLock is a company surfaced as a portfolio company of bessemer-venture-partners, ivp,
-  kleiner-perkins and added to the API Evangelist network as a stub for enrichment. Sector: cybersecurity.
-  This profile is a lead awaiting the enrichment pipeline.'
+description: 'LifeLock is a consumer identity-theft-protection brand founded in 2005
+  in Tempe, Arizona and owned by Gen Digital, Inc. (Nasdaq: GEN). It monitors members''
+  personal information — Social Security numbers, names, addresses, credit applications
+  and public records — for signs of misuse, alerts them through its proprietary Identity
+  Alert System, and provides U.S.-based restoration specialists plus reimbursement
+  coverage when identity theft occurs. Current plans (Core, Advanced, Total) layer
+  on credit-bureau monitoring, dark-web monitoring, automatic data-broker removal,
+  scam support and reimbursement, home-title and SIM-swap monitoring, and the Million
+  Dollar Protection Package. LifeLock is also sold bundled with Norton device security
+  as Norton 360 with LifeLock. It is a direct-to-consumer subscription service and
+  publishes no public developer API, SDKs, or developer portal; its machine-readable
+  surface is a first-party llms.txt at lifelock.norton.com.'
 url: https://raw.githubusercontent.com/api-evangelist/lifelock/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://lifelock.norton.com/content/dam/lifelock/logos/logo_lifelock-by-norton-light-bg.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - bessemer-venture-partners
 - ivp
 - kleiner-perkins
+x-parent-company: 'Gen Digital, Inc. (Nasdaq: GEN)'
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: consumer-product-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cybersecurity
+- Identity
+- Identity Theft Protection
+- Fraud Detection
+- Credit Monitoring
+- Dark Web Monitoring
+- Consumer Security
+- Privacy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,4 +55,31 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.lifelock.com/
+  url: https://lifelock.norton.com/
+- type: LLMsTxt
+  url: llms/lifelock-llms.txt
+- type: DomainSecurity
+  url: security/lifelock-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/lifelock-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.gendigital.com/us/en/contact-us/report-a-potential-security-vulnerability/
+- type: Blog
+  url: https://lifelock.norton.com/learn
+- type: Support
+  url: https://support.norton.com/lifelock/en/us/home/current/help-center
+- type: Pricing
+  url: https://lifelock.norton.com/products
+- type: SignUp
+  url: https://lifelock.norton.com/free-trials/free-identity-theft-protection
+- type: Login
+  url: https://my.norton.com/
+- type: TermsOfService
+  url: https://us.norton.com/legal/lsa
+- type: PrivacyPolicy
+  url: https://us.norton.com/privacy/products-privacy-notice
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
