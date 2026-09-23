@@ -1,0 +1,26 @@
+# Front Door AI Index — lifelock — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: lifelock
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: lifelock.norton.com
+  final_host: lifelock.norton.com
+  ownership: own
+  owner: lifelock
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 2
+  host_score: 2
+  density: 0.87
+  words: 2305
+  tiers:
+    agentic: 0
+    core: 2
+    model: 0
+  ambiguous: 1
+  top_terms:
+    AI: 2
+    agent: 1
