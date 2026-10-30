@@ -64,15 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LifeLock is a consumer identity-theft-protection brand founded in 2005 in Tempe, Arizona and owned by Gen Digital, Inc. (Nasdaq: GEN). It monitors members' personal information for misuse, alerts them through its proprietary Identity Alert System, and provides U.S.-based restoration specialists plus reimbursement coverage when identity theft occurs.
+LifeLock is a consumer identity-theft-protection brand founded in 2005 in Tempe, Arizona and owned by Gen Digital, Inc. (Nasdaq: GEN). It monitors members' personal information — Social Security numbers, names, addresses, credit applications and public records — for signs of misuse, alerts them through its proprietary Identity Alert System, and provides U.S.-based restoration specialists plus reimbursement coverage when identity theft occurs. Current plans (Core, Advanced, Total) layer on credit-bureau monitoring, dark-web monitoring, automatic data-broker removal, scam support and reimbursement, home-title and SIM-swap monitoring, and the Million Dollar Protection Package. LifeLock is also sold bundled with Norton device security as Norton 360 with LifeLock. It is a direct-to-consumer subscription service and publishes no public developer API, SDKs, or developer portal; its machine-readable surface is a first-party llms.txt at lifelock.norton.com.
 
-**No public developer API.** LifeLock is a direct-to-consumer subscription service. Enrichment found no developer portal, OpenAPI, SDKs, MCP server, or `/.well-known/` discovery surface — `developer.lifelock.com`, `api.lifelock.com`, and `developer.gendigital.com` do not resolve. Spec-dependent artifacts are correctly absent rather than fabricated.
+**Areas:** Company · Cybersecurity · Identity · Identity Theft Protection · Fraud Prevention · Credit Monitoring · Dark Web Monitoring · Consumer Security · Privacy
 
-## What was found
+## LifeLock on APIs.io
 
-- **`llms/lifelock-llms.txt`** — a real first-party `llms.txt` served at `https://lifelock.norton.com/llms.txt`, saved verbatim. This is LifeLock's machine-readable surface: plans, features, blog taxonomy, and explicit "Notes for AI Assistants" brand-disambiguation guidance.
-- **`security/lifelock-vulnerability-disclosure.yml`** — disclosure is handled by parent Gen Digital via a central intake form covering all its brands.
-- **`security/lifelock-domain-security.yml`** — TLS 1.3, HSTS, SPF and DMARC (`p=reject`) present; no DNSSEC, no CAA.
-- **`well-known/lifelock-well-known.yml`** — honest negative record; every probed `/.well-known/` path returned 404.
+Everything profiled for LifeLock is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lifelock/](https://apis.io/providers/lifelock/)** — or go straight to one of the APIs or properties below.
 
-Backed by: bessemer-venture-partners, ivp, kleiner-perkins — https://lifelock.norton.com/
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lifelock Domain Security](https://apis.io/security/lifelock/lifelock-domain-security/)
+- [Lifelock Vulnerability Disclosure](https://apis.io/security/lifelock/lifelock-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://lifelock.norton.com/)
+- [Pricing](https://lifelock.norton.com/products)
+- [Sign up](https://lifelock.norton.com/free-trials/free-identity-theft-protection)
+- [Support](https://support.norton.com/lifelock/en/us/home/current/help-center)
+- [Blog](https://lifelock.norton.com/learn)
+- [Security](https://www.gendigital.com/us/en/contact-us/report-a-potential-security-vulnerability/)
+- [Terms of service](https://us.norton.com/legal/lsa)
+- [Privacy policy](https://us.norton.com/privacy/products-privacy-notice)
+
+## API Evangelist rating
+
+**Kin Score 17.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 44.7 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lifelock/](https://apis.io/providers/lifelock/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LifeLock: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lifelock/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
